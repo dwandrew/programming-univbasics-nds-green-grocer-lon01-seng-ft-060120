@@ -84,7 +84,8 @@ clearance_cart
 end
 
 def checkout(cart, coupons)
-  consolidate_cart(cart)
+  consolidated_cart = consolidate_cart(cart)
+  total = consolidated_cart[:price] * consolidated_cart[:count]
 end
 
 
