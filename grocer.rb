@@ -79,6 +79,7 @@ def apply_clearance(cart)
         :price => cart[index][:price],
         :clearance => cart[index][:clearance],
         :count => cart[index][:count]}
+      clearance_cart.push(clearance_item)
       end
       index+=1
   end
